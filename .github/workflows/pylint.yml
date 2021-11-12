@@ -1,0 +1,19 @@
+name: Pylint and Format
+
+on:
+  push:
+    branches: "**"
+  pull_request:
+    branches: "**"
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: pylint-and-format
+      uses: itsvinayak/pylint-and-format@v1.1
+
+    - name: GitHub Action for pylint
+      uses: cclauss/GitHub-Action-for-pylint@0.7.0
