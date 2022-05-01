@@ -1,6 +1,4 @@
-discord_py_slash_command==3.0.1
-discord.py==1.7.3
+aiohttp==3.0.2
+discord-py-interactions==4.1.0
+python-dotenv==0.20.0
 requests==2.26.0
-discord==1.7.3
-python-dotenv==0.19.1
-aiohttp[speedups]
