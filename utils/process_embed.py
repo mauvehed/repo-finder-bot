@@ -17,7 +17,7 @@ async def process_embed(resp, ctx):
     _api_repos_re = re.compile("(api.)|(/repos)")
     _whitespace_re = re.compile(r"\s\s+")
 
-    logger.debug("Processing embed:\n{}\n...".format(list(resp)[0]))
+    logger.debug(f"Processing embed:\n{list(resp)[0]}\n...")
     data2 = random.choice(resp["items"])
     repo_full_name = data2["full_name"]
     repo_description = data2["description"]
